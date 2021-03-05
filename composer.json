@@ -1,7 +1,7 @@
 {
     "name": "far-blue/atlas-info",
     "type": "library",
-    "description": "Uses an Atlas.Pdo connection to discover schema information.",
+    "description": "Uses an Atlas.Pdo connection to discover schema information. ",
     "keywords": [
         "schema",
         "db",
