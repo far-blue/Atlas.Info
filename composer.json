@@ -1,5 +1,5 @@
 {
-    "name": "atlas/info",
+    "name": "far-blue/atlas-info",
     "type": "library",
     "description": "Uses an Atlas.Pdo connection to discover schema information.",
     "keywords": [
@@ -28,5 +28,8 @@
         "psr-4": {
             "Atlas\\Info\\": "tests/"
         }
+    },
+    "replace": {
+        "atlas/info": "1.*"
     }
 }
