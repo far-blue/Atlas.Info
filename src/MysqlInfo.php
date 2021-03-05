@@ -77,6 +77,10 @@ class MysqlInfo extends Info
             return null;
         }
 
+        if ($this->maria && (in_array($type, ['char', 'varchar', 'text'])) && $default === '\'\'') {
+            return '';
+        }
+
         if (strtoupper($default) == 'CURRENT_TIMESTAMP') {
             // the only non-literal allowed by MySQL is "CURRENT_TIMESTAMP"
             return null;
